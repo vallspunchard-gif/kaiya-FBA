@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开亚国际物流移动端原型 - 确认订单</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="prototype-shell">
+    <header class="workspace-header">
+      <div class="workspace-title">
+        <h1>开亚国际物流移动端 HTML 原型</h1>
+        <p>确认页汇总四大模块，帮助用户在提交前快速核对整笔订单。</p>
+      </div>
+      <nav class="workspace-links">
+        <a class="chip-link" href="new-order.html">新建订单</a>
+        <a class="chip-link active" href="confirm.html">确认订单</a>
+        <a class="chip-link" href="detail.html">订单详情</a>
+      </nav>
+    </header>
+
+    <section class="device-wrap">
+      <div class="device">
+        <div class="device-notch"></div>
+        <div class="screen">
+          <div class="status-bar">
+            <span>09:41</span>
+            <div class="dots"><span></span><span></span><span></span></div>
+          </div>
+
+          <header class="app-header">
+            <a class="back-link" href="new-order.html">←</a>
+            <div class="header-text">
+              <p class="header-eyebrow">提交前核对</p>
+              <h2>确认订单</h2>
+            </div>
+            <div class="header-action">⋯</div>
+          </header>
+
+          <div class="screen-content">
+            <div class="summary-stack">
+              <section class="summary-card">
+                <div class="summary-head">
+                  <h3>发货公司</h3>
+                  <a href="new-order.html">修改</a>
+                </div>
+                <div class="summary-lines">
+                  <span>开亚国际物流深圳有限公司</span>
+                </div>
+              </section>
+
+              <section class="summary-card">
+                <div class="summary-head">
+                  <h3>收件人信息</h3>
+                  <a href="recipient.html">修改</a>
+                </div>
+                <div class="summary-lines">
+                  <span>亚马逊仓库编码：ONT8</span>
+                  <span>收件人：Amazon FC</span>
+                  <span>联系电话：+1 234 567 890</span>
+                  <span>地址：Ontario, CA Distribution Center</span>
+                </div>
+              </section>
+
+              <section class="summary-card">
+                <div class="summary-head">
+                  <h3>货物信息</h3>
+                  <a href="cargo.html">修改</a>
+                </div>
+                <div class="summary-lines">
+                  <span>体积：2.1m³</span>
+                  <span>重量：380Kg</span>
+                  <span>件数：45</span>
+                  <span>万邑通入库单号：WYT123456</span>
+                </div>
+              </section>
+
+              <section class="summary-card">
+                <div class="summary-head">
+                  <h3>运输渠道</h3>
+                  <a href="channels.html">修改</a>
+                </div>
+                <div class="summary-lines">
+                  <span>渠道：美森海派普线</span>
+                  <span>船司：美森 · 海派</span>
+                  <span>包税：是 · 独立报关：否</span>
+                  <span>国内交仓：深圳 / 2026-04-25</span>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="sticky-actions">
+            <a class="button ghost" href="new-order.html">上一步</a>
+            <a class="button primary" href="detail.html">提交订单</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

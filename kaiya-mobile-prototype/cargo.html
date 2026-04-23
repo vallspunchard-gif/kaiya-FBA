@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开亚国际物流移动端原型 - 货物信息</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="prototype-shell">
+    <header class="workspace-header">
+      <div class="workspace-title">
+        <h1>开亚国际物流移动端 HTML 原型</h1>
+        <p>货物信息页体现数字录入与智能识别，突出体积、重量、件数三项核心字段。</p>
+      </div>
+      <nav class="workspace-links">
+        <a class="chip-link" href="new-order.html">新建订单</a>
+        <a class="chip-link" href="recipient.html">收件人信息</a>
+        <a class="chip-link active" href="cargo.html">货物信息</a>
+      </nav>
+    </header>
+
+    <section class="device-wrap">
+      <div class="device">
+        <div class="device-notch"></div>
+        <div class="screen">
+          <div class="status-bar">
+            <span>09:41</span>
+            <div class="dots"><span></span><span></span><span></span></div>
+          </div>
+
+          <header class="app-header">
+            <a class="back-link" href="new-order.html">←</a>
+            <div class="header-text">
+              <p class="header-eyebrow">订单信息编辑</p>
+              <h2>货物信息</h2>
+            </div>
+            <div class="header-action">⌘</div>
+          </header>
+
+          <div class="screen-content">
+            <section class="paste-panel">
+              <h3>粘贴货物信息</h3>
+              <p>例如：2.1方 380kg 45件，可自动识别后再做人工修正。</p>
+              <div class="field-group" style="margin-bottom: 12px;">
+                <textarea>2.1方 380kg 45件 WYT123456</textarea>
+              </div>
+              <button class="button secondary" type="button" style="width: 100%;">粘贴并识别</button>
+            </section>
+
+            <div class="grid-two">
+              <div class="field-group">
+                <label for="volume">体积(m³) *</label>
+                <input id="volume" type="text" value="2.1">
+              </div>
+              <div class="field-group">
+                <label for="weight">重量(Kg) *</label>
+                <input id="weight" type="text" value="380">
+              </div>
+            </div>
+
+            <div class="grid-two">
+              <div class="field-group">
+                <label for="pieces">件数 *</label>
+                <input id="pieces" type="text" value="45">
+              </div>
+              <div class="field-group">
+                <label for="inbound">万邑通入库单号</label>
+                <input id="inbound" type="text" value="WYT123456">
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky-actions" style="grid-template-columns: 1fr;">
+            <a class="button primary" href="new-order.html">保存并返回</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

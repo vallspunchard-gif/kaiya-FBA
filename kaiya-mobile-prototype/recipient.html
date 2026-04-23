@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开亚国际物流移动端原型 - 收件人信息</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <main class="prototype-shell">
+    <header class="workspace-header">
+      <div class="workspace-title">
+        <h1>开亚国际物流移动端 HTML 原型</h1>
+        <p>收件人信息页以“粘贴识别 + 结构化修正”为主，减少手工录入。</p>
+      </div>
+      <nav class="workspace-links">
+        <a class="chip-link" href="new-order.html">新建订单</a>
+        <a class="chip-link active" href="recipient.html">收件人信息</a>
+        <a class="chip-link" href="cargo.html">货物信息</a>
+      </nav>
+    </header>
+
+    <section class="device-wrap">
+      <div class="device">
+        <div class="device-notch"></div>
+        <div class="screen">
+          <div class="status-bar">
+            <span>09:41</span>
+            <div class="dots"><span></span><span></span><span></span></div>
+          </div>
+
+          <header class="app-header">
+            <a class="back-link" href="new-order.html">←</a>
+            <div class="header-text">
+              <p class="header-eyebrow">订单信息编辑</p>
+              <h2>收件人信息</h2>
+            </div>
+            <div class="header-action">⌘</div>
+          </header>
+
+          <div class="screen-content">
+            <section class="paste-panel">
+              <h3>粘贴整段地址信息</h3>
+              <p>支持识别亚马逊仓库编码、收件人、联系电话与收件地址。</p>
+              <div class="field-group" style="margin-bottom: 12px;">
+                <textarea>ONT8
+Amazon FC
++1 234 567 890
+Ontario, CA Distribution Center</textarea>
+              </div>
+              <button class="button secondary" type="button" style="width: 100%;">粘贴并识别</button>
+            </section>
+
+            <div class="field-group">
+              <label for="warehouse-code">亚马逊仓库编码 *</label>
+              <input id="warehouse-code" type="text" value="ONT8">
+            </div>
+            <div class="field-group">
+              <label for="recipient-name">收件人 *</label>
+              <input id="recipient-name" type="text" value="Amazon FC">
+            </div>
+            <div class="field-group">
+              <label for="recipient-phone">联系电话 *</label>
+              <input id="recipient-phone" type="text" value="+1 234 567 890">
+            </div>
+            <div class="field-group">
+              <label for="recipient-address">收件地址 *</label>
+              <textarea id="recipient-address">Ontario, CA Distribution Center</textarea>
+            </div>
+          </div>
+
+          <div class="sticky-actions" style="grid-template-columns: 1fr;">
+            <a class="button primary" href="new-order.html">保存并返回</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

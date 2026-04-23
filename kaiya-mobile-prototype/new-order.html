@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开亚国际物流移动端原型 - 新建订单</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <main class="prototype-shell">
+    <header class="workspace-header">
+      <div class="workspace-title">
+        <h1>开亚国际物流移动端 HTML 原型</h1>
+        <p>新建订单主页面采用卡片摘要 + 子页编辑，适合移动端快速建单。</p>
+      </div>
+      <nav class="workspace-links">
+        <a class="chip-link" href="index.html">首页</a>
+        <a class="chip-link active" href="new-order.html">新建订单</a>
+        <a class="chip-link" href="orders.html">我的订单</a>
+        <a class="chip-link" href="detail.html">订单详情</a>
+      </nav>
+    </header>
+
+    <section class="device-wrap">
+      <div class="device">
+        <div class="device-notch"></div>
+        <div class="screen">
+          <div class="status-bar">
+            <span>09:41</span>
+            <div class="dots"><span></span><span></span><span></span></div>
+          </div>
+
+          <header class="app-header">
+            <a class="back-link" href="index.html">←</a>
+            <div class="header-text">
+              <p class="header-eyebrow">订单创建 · 移动端下单</p>
+              <h2>新建订单</h2>
+            </div>
+            <div class="header-action">⋯</div>
+          </header>
+
+          <div class="screen-content">
+            <div class="segment" data-segment data-target="[data-recipient-summary]">
+              <button class="active" type="button" data-mode="amazon">亚马逊仓库</button>
+              <button type="button" data-mode="non-amazon">非亚马逊仓库</button>
+            </div>
+
+            <div class="field-group">
+              <label for="company">发货公司 *</label>
+              <input id="company" type="text" value="开亚国际物流深圳有限公司" maxlength="100">
+              <p class="inline-note">如客户有多个发货公司，默认带出最近订单所用公司。</p>
+            </div>
+
+            <div class="summary-stack">
+              <a class="summary-card" href="recipient.html">
+                <div class="summary-head">
+                  <h3>收件人信息</h3>
+                  <span class="tag">编辑</span>
+                </div>
+                <div class="summary-lines" data-recipient-summary data-mode="amazon">
+                  <span>亚马逊仓库编码：ONT8</span>
+                  <span>收件人：Amazon FC</span>
+                  <span>联系电话：+1 234 567 890</span>
+                  <span>收件地址：Ontario, CA Distribution Center</span>
+                </div>
+                <div class="summary-lines hidden" data-recipient-summary data-mode="non-amazon">
+                  <span>仓库地址：Toronto Warehouse Zone B</span>
+                  <span>收件人：Northport Logistics</span>
+                  <span>联系电话：+1 416 245 9041</span>
+                  <span>收件地址：Unit 8, Toronto, Ontario</span>
+                </div>
+              </a>
+
+              <a class="summary-card" href="cargo.html">
+                <div class="summary-head">
+                  <h3>货物信息</h3>
+                  <span class="tag">编辑</span>
+                </div>
+                <div class="summary-lines">
+                  <span>体积：2.1 m³</span>
+                  <span>重量：380 Kg</span>
+                  <span>件数：45</span>
+                  <span>万邑通入库单号：WYT123456</span>
+                </div>
+              </a>
+
+              <a class="summary-card" href="channels.html">
+                <div class="summary-head">
+                  <h3>运输渠道</h3>
+                  <span class="tag">编辑</span>
+                </div>
+                <div class="summary-lines">
+                  <span>渠道：美森海派普线</span>
+                  <span>船司：美森 / 运输方式：海派</span>
+                  <span>包税：是 / 独立报关：否</span>
+                  <span>国内交仓：深圳 / 2026-04-25</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="sticky-actions">
+            <a class="button secondary" href="orders.html">保存草稿</a>
+            <a class="button primary" href="confirm.html">下一步</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
